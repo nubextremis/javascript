@@ -1,0 +1,231 @@
+*Módulo A*
+O que faz o JavaScript?
+Faz praticamente tudo...
+-------------------------
+Client x Server
+máqinas<->navegador<->nuvem<->servidor<->arquivos
+JavaScipt - melhor para client side(também pode ser usado em servidores)
+website é composto na grande maioria das vezes por 3 tecnologias:
+HTML - trata do conteúdo
+CSS - trata do estilo
+JavaScipt - trata da interação
+---------------------------
+Produção de texto/organização/imagens - HTML↓
+design, edição de ambiente - CSS↓
+interação com cliente - JavaScript
+----------------------------
+JavaScipt e Java são a mesma coisa? 
+1970 - Inicio da internet/Guerra Fria
+1993 - Surgimento de HTML, prot. HTTP, fundação da World Wide Web, Mosaic(navegador de internet)
+1994 - Fundação da Netscape
+1995 - Criação do Mocca(LiveScript), ao mesmo tempo Java, LiveScript virou JavaScript != de Java
+1997 - ECMA, padronizadora, Surge ECMAScript(JavaScript padronizada)
+2002 - Netscape faliu, criação de uma fundação, Mozilla que virou Firefox(perdeu espaço)
+2008 - Surgimento do Google Chrome(mais famoso navegador do mundo), motor interno de JavaScript - motor V8(códigos jit)
+2010 - Node.js, máquina que roda JS fora do navegador
+ECMAScript-1997(1.0), 1998(2.0), 1999(3.0), 2009(ES5), 2015(ES6), 2016(ES2016), 2017(ES2017), 2018(ES2018)
+Tecnologias-jQuery(conj. de bibliotecas), Angular(cria. aplicações), react, Vue, Electron(interfaces gráficas/VSCode),
+Ionic(aplicações disp. móveis), Cordova...
+Gaming-Phaser, PixiJS, IMPACT, melon.js, CraftyJS
+-----------------------------
+<h1></h1> - diz que texto é um título de nível 1
+    <style>
+        body {
+            background-color:rgb(3, 88, 245);
+            color: white;
+            font: normal 20pt Arial;
+        }        
+    </style>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+</body>
+    <script>
+        
+    </script>
+* COMANDOS EM JavaScipt SEMPRE EM MINÚSCULO(HÁ EXCEÇÕES)
+--------------------------------------------------------------------------------------
+*MÓDULO B*
+Comandos básicos
+armazenamento com dados, tratamento com dados, operação com dados
+Tipos de dados e variáveis
+window.alert()
+
+window.confirm()
+
+window.prompt()
+
+---------------------
+Comentários
+//uma única linha ou /*mais 
+                      de uma 
+                      linha*/
+
+
+vaga a1 = carro1
+     a1 = carro2
+     a1 = null
+==
+variáveis(pode possuir tamanhos diferentes)
+var n1 = 5
+var n2 = 8.5
+var n3 = 15
+var s1 = "JavaScript"
+var s2 = 'Curso em Vídeo'
+var s3 = `Guanabara`
+-----------------------
+nomeação dos identificadores/variaveis
+* Podem começar com uma letra, $ ou _
+* Não podem começar com números
+* É possível usar letras ou números
+* É possível usar acentos e símbolos
+* Não podem conter espaços
+* Não podem ser palavras reservadas
+dicas:
+* Maiúsculas e minúsculas fazem a diferença
+* Tente escolher nomes coerentes para as variáveis
+* Evite se tornar um 'programador alfabeto' ou um 'programador contador'
+---
+number - Infinity, NaN
+string - cadeias de caracteres
+boolean - True, False
+null - número vazio
+undefined
+object - Array
+function
+'typeof'
+--------------------------------------
++ - soma
+- - subtração
+* - multiplicação
+/ - divisão real
+% - divisão inteira/resto
+** - potência
+--------------------------------------
+() -> ** -> *, /, % -> +, - ->
+--------------------------------------
+!(diferente) -> &&(e) -> ||(ou) -> ? -> :
+--------------------------------------
+* MÓDULO C * 
+DOCUMENT OBJECT MODEL
+tratamento de objetos visuais
+árvore DOM
+manipulando o DOM
+--------------------------------------
+mouseenter mousemove mousedown mouseup click mouseout
+--------------------------------------
+function ação(param){
+
+}
+--------------------------------------
+* MÓDULO D *
+CONDIÇÕES EM JAVASCRIPT
+if (condição){
+    true
+} else {
+    false
+}
+--------------------------------------
+Tipos de Condição
+Condição Simples - if(condição){true}
+Condição Composta - if(condição){true}else{false}
+--------------------------------------
+div# - usado em HTML
+div. - usado para CSS
+--------------------------------------
+switch (expressão){
+    case valor 1:
+
+    break(obrigatório)
+    case valor 2:
+    
+    break(obrigatório)
+    case valor 3:
+    
+    break(obrigatório)
+    default:
+    
+    break(não obrigatório, preferenciar utilização)
+}
+---------------------------------------
+* MODULO E *
+REPETIÇÕES - LAÇOS - ITERAÇÕES
+-Serve somente para 8 fatias
+function comerPizza() {
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+}
+A -> B 
+-----------------------------------------
+Estruturas de Sequência
+Condições
+Repetições
+-----------------------------------------
+Enquanto verdade, repetir
+enquanto falso, parar
+-----------------------------------------
+serve para n fatias
+while (condição) {
+    Verdade - repete
+} falso - para
+------------------------------------------
+function comerPizza() {
+    while (temFatia()){
+        comerFatia()
+    }
+}
+------------------------------------------
+do {
+
+} while (condição true)
+-------------------------------------------
+for (inicio; teste; incr) {
+
+}
+-------------------------------------------
+var c=1
+while (c<=10){
+
+    c++
+}
+-------------------------------------------
+for (var c=1; c<=10; c++){
+    
+}
+-------------------------------------------
+* MÓDULO F *
+Variáveis compostas-Uso de funções e eventos-Passagem de parâmetros-Exercícios Propostos-Próximos passos
+array vertor = a / índice chave(0,1,2) / elemento / conteúdo valor
+vaga a = [a0, a1, a2]
+--------------------------------------------
+let num = [5, 8, 4]
+num[3] = 6
+num.push(7) - adiciona na próxima chave
+num.length - comprimento da variavel
+num.sort() - organiza
+---------------------------------------------
+console.log(num[0])
+num.indexOf[7]
+---------------------------------------------
+function ação(parametro) {
+
+    return res
+} ação(5)
+---------------------------------------------
+function parimp(n) {
+    if (n%2==0){
+        return 'par'
+    } else {
+        return 'ímpar'
+    }
+}
+let res = parimp(11)
+----------------------------------------------
+OBJETOS 
+let amigo = {nome:'José', sexo:'M', peso:85.4, engordar(p){}}
